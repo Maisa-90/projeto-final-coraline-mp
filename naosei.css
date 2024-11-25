@@ -1,0 +1,198 @@
+/* Cores principais */
+:root {
+    --cor-titulo: #FFFFFF;
+    --cor-subtitulo: #FFD700;
+    --cor-rodape: #333;
+    --cor-acao: #E63946;
+    --cor-fundo: #F4F4F4;
+    --cor-texto: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+}
+
+/* Header */
+.header {
+    background-image: url('la8.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: var(--texto-branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;;
+    padding: 20px;
+    text-align: center;
+    color: var(--cor-titulo);
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--cor-subtitulo);
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor-titulo);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Seção das bandeiras */
+.pais-section {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.flags {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.flag {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flag img {
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.flag p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.hero {
+    background-image: url('la8.JPG');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    color: var(--texto-branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Efeito de destaque ao passar o mouse */
+.flag:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Playlist */
+.playlist {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+ul#playlist-songs {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+ul#playlist-songs li {
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.controls button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    background-color: var(--cor-acao);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.controls button:hover {
+    background-color: var(--cor-subtitulo);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--cor-rodape);
+    color: var(--cor-titulo);
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-text p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-links a {
+    color: var(--cor-titulo);
+    font-size: 1.5rem;
+}
+
+.social-links a:hover {
+    color: var(--cor-subtitulo);
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}

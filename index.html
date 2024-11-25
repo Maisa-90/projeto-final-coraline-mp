@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LL ORGULHO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho com imagem de fundo -->
+    <header class="hero">
+        
+        </nav>
+        <div class="hero-text">
+            <h1>Latitude Latina</h1>
+            <p>Descubra as maravilhas culturais e naturais que fazem parte da nossa região.</p>
+            <a href="#explorar" class="cta-button">Explorar</a>
+        </div>
+    </header>
+
+     <!-- SOBRE O PROJETO -->
+     <main>
+        <!-- Sobre o Projeto -->
+        <section id="apresentacao">
+            <h2>Sobre o Projeto</h2>
+            <p>
+                A América Latina é uma região de rica diversidade, marcada por paisagens deslumbrantes, culturas vibrantes e histórias que refletem a união entre tradições ancestrais e influências modernas. Cada país latino possui uma identidade única, com expressões culturais que vão desde músicas e danças até festivais, culinária e costumes que encantam e surpreendem. O projeto <strong>Latitude Latina</strong> nasceu da vontade de valorizar e promover a riqueza da nossa própria região, incentivando as pessoas a explorarem e admirarem os tesouros que a América Latina tem a oferecer. Muitas vezes, vemos uma grande valorização das chamadas Eurotrips — viagens pela Europa — enquanto a nossa própria cultura é deixada de lado, subestimada ou pouco explorada. Queremos mudar essa perspectiva, mostrando que a América Latina é um território cheio de maravilhas: florestas tropicais exuberantes, desertos impressionantes, montanhas imponentes e cidades que combinam história e modernidade. Além disso, é aqui que encontramos povos calorosos, com tradições e costumes que falam ao coração. Nosso objetivo é inspirar a descoberta de destinos conhecidos e pouco explorados, trazendo à tona a importância de reconhecer e celebrar a grandiosidade da cultura latina. Cada prato típico, cada dança, cada festa ou monumento carrega uma história que merece ser contada. Conhecer nossa própria região não é apenas uma forma de turismo, mas também de fortalecer nossa identidade cultural e valorizar nossas raízes. Descubra, apaixone-se e permita-se admirar a América Latina como ela merece: um continente repleto de beleza, significado e possibilidades.
+            </p>
+        </section>
+
+        <!-- Destinos Ocultos -->
+        <section id="destinos" class="expandable-section" onclick="toggleSectionContent('destinos-content')">
+         <!-- PLAYLIST -->
+     <section id="playlist">
+        <h2>Top 15: Latinoamérica - Coração e Ritmo</h2>
+        <div id="audio-player">
+            <audio id="audio" controls>
+                <source id="audio-source" src="audio/caetano.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/tim.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/ritinha.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/caetano.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/tim.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/ritinha.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/caetano.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/tim.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/ritinha.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/caetano.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/tim.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/ritinha.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/caetano.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/tim.mp3" type="audio/mpeg">
+                <source id="audio-source" src="audio/ritinha.mp3" type="audio/mpeg">
+            </audio>
+            <div id="playlist-controls">
+                <button onclick="prevSong()">Anterior</button>
+                <button onclick="nextSong()">Próxima</button>
+            </div>
+            <ul id="playlist-songs">
+                <li onclick="playSong(0)">Latinoamérica - Calle 13</li>
+                <li onclick="playSong(1)">Sólo le Pido a Dios - León Gieco</li>
+                <li onclick="playSong(2)">Besta é tu - Novos Baianos</li>
+                <li onclick="playSong(3)">A Carne - Elza Soares</li>
+                <li onclick="playSong(4)">Ojalá - Silvio Rodríguez</li>
+                <li onclick="playSong(5)">Cuando Pase el Temblor - Soda Stereo </li>
+                <li onclick="playSong(6)">Trem das Onze - Adoniran Barbosa </li>
+                <li onclick="playSong(7)">Danado pra Catende - Alceu Valença</li>
+                <li onclick="playSong(8)">Sangue Latino - Secos & Molhados</li>
+                <li onclick="playSong(9)">Maracatu Atômico - Chico Science, Nação Zumbi</li>
+                <li onclick="playSong(10)">Pequenas alegrias da vida adulta - Emicida</li>
+                <li onclick="playSong(11)">This is not America - Residente, Ibeyi</li>
+                <li onclick="playSong(12)">Meu ébano - Alcione</li>
+                <li onclick="playSong(13)">Quando a gira girou - Zeca Pagodinho</li>
+                <li onclick="playSong(14)">Ideologia - Cazuza</li>
+                <li onclick="playSong(16)">Clandestino - Manu Chao</li>
+            </ul>
+        </div>
+    </section>
+
+        <!-- Tradições e Festividades -->
+        <section id="festividades" class="expandable-section" onclick="toggleSectionContent('festividades-content')">
+            
+    <!-- EXPLORAR -->
+     <!-- Curiosidades Culturais -->
+     <section id="curiosidades" class="expandable-section" onclick="toggleSectionContent('curiosidades-content')">
+        <h2>Essência Cultural</h2>
+        <p>
+            Cada país da América Latina tem suas próprias histórias e tradições únicas. De costumes ancestrais a expressões culturais modernas, explore curiosidades fascinantes que tornam cada região especial.
+        </p>
+        <section class="countries">
+            
+            <div class="country" onclick="redirectToCountry('argentina.html')" title="Argentina">
+                <img src="https://i.pinimg.com/736x/05/83/ab/0583abe85afba02cbd2a6c54c3147573.jpg" alt="Argentina">
+            </div>
+            <div class="country" onclick="redirectToCountry('bolivia.html')" title="Bolívia">
+                <img src="https://i.pinimg.com/736x/6c/cd/52/6ccd5289ce8892ea9dbac8b1593e8769.jpg" alt="Bolívia">
+                <p>arew</p>
+            </div>
+            <div class="country" onclick="redirectToCountry('brasil.html')" title="Brasil">
+                <img src="https://i.pinimg.com/736x/34/cb/ca/34cbca6f856c9e5981aaa18652492849.jpg" alt="Brasil">
+            </div>
+            <div class="country" onclick="redirectToCountry('chile.html')" title="Chile">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Flag_of_Chile.svg/1920px-Flag_of_Chile.svg.png" alt="Chile">
+            </div>
+            <div class="country" onclick="redirectToCountry('colombia.html')" title="Colombia">
+                <img src="https://th.bing.com/th/id/R.d5a9d893f69f1726e96a14d0ef63fd4a?rik=ZDPMGqBhtga8Yg&pid=ImgRaw&r=0" alt="Colômbia">
+            </div>
+            <div class="country" onclick="redirectToCountry('costarica.html')" title="Costa Rica">
+                <img src="https://i.pinimg.com/736x/c3/48/a6/c348a65d9be6ca5f6cd9575fe6520f6c.jpg" alt="Costa Rica">
+            </div>
+            <div class="country" onclick="redirectToCountry('cuba.html')" title="Cuba">
+                <img src="https://i.pinimg.com/736x/ca/f1/cd/caf1cd1f0521cc08691ac159b8115534.jpg" alt="Cuba">
+            </div>
+            <div class="country" onclick="redirectToCountry('equador.html')" title="Equador">
+                <img src="https://i.pinimg.com/736x/b8/fb/db/b8fbdb63fabff9b8b9a7c8b21d1dfe4f.jpg" alt="Equador">
+            </div>
+            <div class="country" onclick="redirectToCountry('elsalvador.html')" title="El Salvador">
+                <img src="https://i.pinimg.com/736x/f9/8a/64/f98a64b9f05a957008178881ef85958d.jpg" alt="El Salvador">
+            </div>
+            <div class="country" onclick="redirectToCountry('guatemala.html')" title="Guatemala">
+                <img src="https://i.pinimg.com/736x/3b/c1/95/3bc195ea59344ce996943d3541d28ed5.jpg" alt="Guatemala">
+            </div>
+            <div class="country" onclick="redirectToCountry('haiti.html')" title="Haiti">
+                <img src="https://i.pinimg.com/736x/4e/32/01/4e320185beea4696b0ef2457af6a7f13.jpg" alt="Haiti">
+            </div>
+            <div class="country" onclick="redirectToCountry('honduras.html')" title="Honduras">
+                <img src="https://i.pinimg.com/736x/ba/c7/f5/bac7f58dafa8c625ffdae9ed74821f66.jpg" alt="Honduras">
+            </div>
+            <div class="country" onclick="redirectToCountry('mexico.html')" title="México">
+                <img src="https://i.pinimg.com/736x/c0/fe/9a/c0fe9ab31c1b165ec774b49f3d3a145c.jpg" alt="México">
+            </div>
+            <div class="country" onclick="redirectToCountry('nicaragua.html')" title="Nicarágua">
+                <img src="https://i.pinimg.com/736x/d0/1b/0d/d01b0d9cd558488e2f08afced895b3c0.jpg" alt="Nicarágua">
+            </div>
+            <div class="country" onclick="redirectToCountry('panama.html')" title="Panamá">
+                <img src="https://i.pinimg.com/736x/46/1e/1d/461e1d5635c32858d99e0f1658f4fb71.jpg" alt="Panamá">
+            </div>
+            <div class="country" onclick="redirectToCountry('paraguai.html')" title="Paraguai">
+                <img src="https://i.pinimg.com/736x/43/a1/6d/43a16d8e04ff53445eb9c818cb6a2087.jpg" alt="Paraguai">
+            </div>
+            <div class="country" onclick="redirectToCountry('peru.html')" title="Peru">
+                <img src="https://i.pinimg.com/736x/9b/78/5b/9b785bc2e13d2ef6dc3125545a483613.jpg" alt="Peru">
+            </div>
+            </div>
+            <div class="country" onclick="redirectToCountry('mrepublicadominicana.html')" title="República Dominicana">
+                <img src="https://i.pinimg.com/736x/ef/d1/c8/efd1c8cc10bb5afb0f948f8eef46e55a.jpg" alt="República Dominicana">
+            </div>
+            </div>
+            <div class="country" onclick="redirectToCountry('uruguai.html')" title="Uruguai">
+                <img src="https://i.pinimg.com/736x/83/75/74/837574245a97c806f95f233f1de15b56.jpg" alt="Uruguai">
+            </div>
+            </div>
+            <div class="country" onclick="redirectToCountry('venezuela.html')" title="Venezuela">
+                <img src="https://i.pinimg.com/736x/ef/9e/0c/ef9e0c4e3fb4ac5cfaabbf5092bf9baf.jpg" alt="Venezuela">
+            </div>
+        </section>
+    
+        <script src="script.js"></script>
+            
+                </div>
+            </section>
+        </body>
+                
+                </div>
+            </div>
+        </section>
+    </main>
+           
+ 
+
+
+
+  <!-- Rodapé com estilo simples -->
+<footer class="footer">
+    <div class="footer-content">
+        <p class="footer-text">&copy; <span id="year"></span> - Todos os direitos reservados</p> 
+        <p>Vamos juntos explorar a alma vibrante da América Latina!</p>
+        <div class="social-links">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+        </div>
+    </div>
+
+    <div class="back-to-top">
+        <a href="#top" title="Voltar ao início">&#8679;</a>
+    </div>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
+
+</div>
+</div>
+</section>
